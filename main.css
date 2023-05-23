@@ -1,0 +1,282 @@
+:root {
+
+    --bittersweet-2: #EC725Bff;
+    --white: #ffffff;
+    --light_maroon: #611111; 
+    --gray: #cccccc; 
+    --dark-gray: #212529; 
+    --red: #921825;
+    --english-violet: #4D4767ff;  
+    --mountbatten-pink-2: #967F98ff;
+    --pallete-color: #c77559;
+    --burnt-umber: #96291Eff;
+    --raisin-black: #1A192Bff;
+    --dark-purple: rgb(18, 17, 32);
+
+
+}
+
+body {
+    background: linear-gradient(to right, rgb(11, 15, 39), #060815ff) 0% 0% / cover repeat;
+    height: 100%;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Navbar */
+
+.navbar {
+
+    background: rgb(18, 17, 32, .8);
+    backdrop-filter: blur(5px);
+    border-radius: 5px 5px 5px 5px;
+    padding: 0 0 10px 0;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 60px
+}
+
+
+#logo {
+
+    max-width: 35px;
+    max-height: 45px;
+    padding: 0 0 1px 0;
+}
+
+@media (max-width: 990px){
+ 
+    #logo {
+
+        padding: 0 0 5px 0;
+    }
+}
+
+
+.navbar-toggler {
+
+    max-height: 45px;
+}
+
+
+
+/*Home Page */
+
+.parallax-home {
+
+    background-image: url("images/maroon_sunset.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+}
+
+#header {
+
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110vh;
+    text-align:center;
+}
+
+#header h2 {
+
+    font-size: 9vmax;
+    font-family: 'Times new roman';
+}
+
+#header h3 {
+
+    font-size: 5vmax;
+    font-family: 'Times new Roman';
+}
+
+#header h4 {
+
+    font-size: 3.5vmax;
+    font-family: 'Lato';
+}
+
+
+
+/*Aboout Me Section*/
+
+#about {
+
+    padding: 80px 50px 0 50px;
+    min-height: 100vh;
+    
+}
+
+@media (min-width: 992px) {
+    #about{
+        padding: 90px 150px 90px 150px;
+    }
+}
+
+#about-box {
+
+    margin:0 0 0 0;
+}
+
+
+
+
+#headshot {
+
+    height: 20vmax;
+    width: 20vmax;
+    padding:0;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(232, 230, 230, 0.56) 0px 0px 50px 4px;
+}
+
+#headshot:hover { 
+    transform: scale(1.1); 
+    box-shadow: rgba(237, 234, 234, 0.56) 0px 0px 25px 2px;
+}
+
+#about p {
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#skill_box1 {
+
+    padding: 10px 20px 5px 20px;
+    margin: 40px 0 20px 0;
+    width: fit-content;
+    display: inline-flex;
+    justify-content: space-between;
+    background: linear-gradient(var(--raisin-black), var(--raisin-black)) padding-box,
+                linear-gradient(to right, rgb(0, 0, 223), darkorchid) border-box;
+    border-radius: 20em;
+    border: 2.5px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+#skill_box1:hover {
+
+    transform: scale(1.05);
+}
+
+#skill {
+
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0 5px 0; 
+}
+
+.skill-icon {
+
+    height: 30px;
+    width: 30px;
+}
+
+#summary {
+
+    color: white;
+    background-color: var(--raisin-black);
+    padding: 20px;
+    margin: 0 0 0 0;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 1.15rem;
+    background: linear-gradient(var(--raisin-black), var(--raisin-black)) padding-box,
+                linear-gradient(to right, rgb(0, 0, 223), darkorchid) border-box;
+    border: 2.5px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+#summary:hover {
+
+    transform: scale(1.05);
+}
+
+/* Involvment */
+
+
+#involvement {
+
+    padding: 0px 50px 0 50px;
+}
+
+.title h3{
+
+    align-items: center;
+    color: white;
+    font-size: 4vmax;
+    text-align: center;
+    padding: 0 0 40px 0;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ .box-padding {
+
+    padding: 10px 0 10px 0;
+ }
+
+.inv {
+
+    background-color: #14102Eff;
+    padding: 50px 20px 50px 20px;
+    margin: 30px 4px 50px 40px;
+    border-radius: 10px;
+    background: linear-gradient(#14102Eff, #14102Eff) padding-box,
+                linear-gradient(to right, #c21500, #ffc500) border-box;
+    border: 2.5px solid transparent;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(237, 234, 234, 0.56) 0px 0px 15px 2px;
+}
+
+.inv:hover {
+
+    transform: scale(1.05);
+    box-shadow: rgb(255, 255, 255) 0px 0px 7.5px 1px;
+}
+
+.inv h4 {
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+ }
+
+ .inv p {
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    padding:0%;
+ }
+
+
+
+.box-padding img {
+
+    max-height: 255px;
+    max-width: 405px;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+
+    .box-padding {
+        margin: 0 15px 0 15px;
+    }
+}
+
+
+
+
+
