@@ -16,11 +16,11 @@
 
 }
 
-body {
+body, html {
     background: linear-gradient(to right, rgb(11, 15, 39), #060815ff) 0% 0% / cover repeat;
     height: 100%;
     width: 100%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Navbar */
@@ -207,7 +207,7 @@ body {
 
 #involvement {
 
-    padding: 0px 50px 0 50px;
+    padding: 80px 50px 50px 50px;
 }
 
 .title h3{
@@ -233,7 +233,7 @@ body {
     margin: 30px 4px 50px 40px;
     border-radius: 10px;
     background: linear-gradient(#14102Eff, #14102Eff) padding-box,
-                linear-gradient(to right, #c21500, #ffc500) border-box;
+                linear-gradient(-45deg, #037ADE, #03E5B7) border-box;
     border: 2.5px solid transparent;
     transition: all .2s ease-in-out;
     box-shadow: rgba(237, 234, 234, 0.56) 0px 0px 15px 2px;
@@ -257,6 +257,7 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.15rem;
+    font-weight: 100;
     padding:0%;
  }
 
@@ -274,6 +275,33 @@ body {
     .box-padding {
         margin: 0 15px 0 15px;
     }
+}
+
+/* Contacts */
+
+#contact {
+   padding: 0 100px 50px 100px;
+}
+#contact img {
+
+    max-width: 45px;
+    max-height: 45px;
+    list-style: none;
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+.contact-box {
+
+    width: fit-content;
+    padding: none;
+}
+.contact-box ul {
+
+    list-style: none;
+    display: inline-flex; 
+    padding: 0;
+
 }
 
 
