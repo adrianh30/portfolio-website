@@ -12,31 +12,35 @@
     --burnt-umber: #96291Eff;
     --raisin-black: #1A192Bff;
     --dark-purple: rgb(18, 17, 32);
-
-
+    --rich-black: #060815ff;
+    --oxford-blue-2: #080323ff;
+    --secondary-text: rgb(170 166 195 );
+    --html: #ec008c;
+    --css: #56ccf2;
+    --js: #f0db4f;
 }
 
 body, html {
-    background: linear-gradient(to right, rgb(11, 15, 39), #060815ff) 0% 0% / cover repeat;
+    background: linear-gradient(to right, #060815ff, #060815ff) 0% 0% / cover repeat;
     height: 100%;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 /* Navbar */
+
 
 .navbar {
 
     background: rgb(18, 17, 32, .8);
     backdrop-filter: blur(5px);
-    border-radius: 5px 5px 5px 5px;
-    padding: 0 0 10px 0;
+    border-radius: 5px;
+    padding: 0 ;
     margin-top: 5px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    height: 60px
 }
-
 
 #logo {
 
@@ -53,15 +57,14 @@ body, html {
     }
 }
 
-
 .navbar-toggler {
 
     max-height: 45px;
 }
 
 
-
 /*Home Page */
+
 
 .parallax-home {
 
@@ -101,8 +104,8 @@ body, html {
 }
 
 
-
 /*Aboout Me Section*/
+
 
 #about {
 
@@ -117,13 +120,19 @@ body, html {
     }
 }
 
+@media (max-width: 420px) {
+
+    #about {
+
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
 #about-box {
 
     margin:0 0 0 0;
 }
-
-
-
 
 #headshot {
 
@@ -133,11 +142,19 @@ body, html {
     border-radius: 50%;
     transition: all .2s ease-in-out;
     box-shadow: rgba(232, 230, 230, 0.56) 0px 0px 50px 4px;
+    filter: grayscale(80%);
+
 }
 
 #headshot:hover { 
-    transform: scale(1.1); 
+
     box-shadow: rgba(237, 234, 234, 0.56) 0px 0px 25px 2px;
+    filter: none;
+}
+
+#headshot img:hover {
+
+    transform: scale(1.1);
 }
 
 #about p {
@@ -155,19 +172,13 @@ body, html {
     justify-content: space-between;
     background: linear-gradient(var(--raisin-black), var(--raisin-black)) padding-box,
                 linear-gradient(to right, rgb(0, 0, 223), darkorchid) border-box;
-    border-radius: 20em;
+    border-radius: 5rem;
     border: 2.5px solid transparent;
     transition: all .2s ease-in-out;
 }
 
-#skill_box1:hover {
-
-    transform: scale(1.05);
-}
-
 #skill {
 
-    align-items: center;
     justify-content: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -183,24 +194,25 @@ body, html {
 #summary {
 
     color: white;
-    background-color: var(--raisin-black);
+    background-color: rgb(29, 24, 54);
     padding: 20px;
     margin: 0 0 0 0;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 40px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-size: 1.15rem;
     background: linear-gradient(var(--raisin-black), var(--raisin-black)) padding-box,
-                linear-gradient(to right, rgb(0, 0, 223), darkorchid) border-box;
+                linear-gradient(-25deg, rgb(0, 0, 223), darkorchid) border-box;
     border: 2.5px solid transparent;
     transition: all .2s ease-in-out;
 }
 
-#summary:hover {
+#summary:hover, #skill_box1:hover {
 
-    transform: scale(1.05);
+    border-radius: .75rem;
 }
+
 
 /* Involvment */
 
@@ -209,6 +221,16 @@ body, html {
 
     padding: 80px 50px 50px 50px;
 }
+
+@media (max-width: 420px) {
+
+    #involvement {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 
 .title h3{
 
@@ -223,26 +245,25 @@ body, html {
 
  .box-padding {
 
-    padding: 10px 0 10px 0;
+    padding: 4vmin 2vmin 4vmin 2vmin;
  }
 
 .inv {
 
     background-color: #14102Eff;
-    padding: 50px 20px 50px 20px;
+    padding: 20px;
     margin: 30px 4px 50px 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     background: linear-gradient(#14102Eff, #14102Eff) padding-box,
-                linear-gradient(-45deg, #037ADE, #03E5B7) border-box;
+                linear-gradient(to left, #037ADE, #03E5B7) border-box;
     border: 2.5px solid transparent;
     transition: all .2s ease-in-out;
-    box-shadow: rgba(237, 234, 234, 0.56) 0px 0px 15px 2px;
+    box-shadow: rgba(193, 138, 229, 0.56) 0px 0px 30px 1px;
 }
 
 .inv:hover {
 
-    transform: scale(1.05);
-    box-shadow: rgb(255, 255, 255) 0px 0px 7.5px 1px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 8px 1px;
 }
 
 .inv h4 {
@@ -254,41 +275,142 @@ body, html {
 
  .inv p {
 
-    color: white;
+    color: var(--secondary-text);
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.15rem;
     font-weight: 100;
     padding:0%;
  }
 
-
-
 .box-padding img {
 
     max-height: 255px;
     max-width: 405px;
     justify-content: center;
+    border-radius: 25px;
 }
 
-@media (max-width: 400px) {
+
+
+@media (max-width: 420px) {
 
     .box-padding {
         margin: 0 15px 0 15px;
     }
 }
 
+.carousel-item {
+
+    justify-content: center;
+}
+
+
+/* Projects */
+
+
+#projects {
+
+    padding: 80px 100px 50px 100px;
+}
+
+@media (max-width: 420px) {
+
+    #projects {
+
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .project-card {
+
+        height: fit-content;
+    }
+    
+    .project-card img{
+
+        width: 100%;
+    }
+}
+
+.project-card {
+
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    background: linear-gradient( rgb(16 13 37), rgb(16 13 37)) padding-box,
+                linear-gradient(-45deg, rgba(9,9,121,1) 15%, rgba(255,0,0,1) 110%) border-box;
+
+    border: 2.5px solid transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    transition: all .5s ease-in-out;
+}
+
+.project-card:hover{
+    
+    transform: scale(.97);
+    border: 7.5px solid transparent;
+}
+
+.car {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-card img {
+
+    width: 100%;
+    height: 110%;
+    border-radius: 15px;
+
+}
+
+.project-text {
+
+    padding: 20px 5px 0 5px;
+}
+
+.language-used {
+
+    display: flex;
+    padding: 50px 0 0 0;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.html {
+
+    color: var(--html)
+}
+
+.css {
+
+    color: var(--css)
+}
+
+.js {
+
+    color: var(--js);
+}
+
+
 /* Contacts */
 
-#contact {
-   padding: 0 100px 50px 100px;
-}
-#contact img {
 
-    max-width: 45px;
-    max-height: 45px;
-    list-style: none;
-    display: flex;
-    margin: 0 10px 0 10px;
+#contact {
+   padding: 50px 100px 150px 100px;
+}
+
+@media (max-width: 420px) {
+
+    #contact {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .contact-box {
@@ -296,15 +418,57 @@ body, html {
     width: fit-content;
     padding: none;
 }
+
 .contact-box ul {
 
     list-style: none;
-    display: inline-flex; 
+    display: flex; 
     padding: 0;
+}
 
+.contact-box li {
+
+    margin: 0 15px;
+    font-size: 50px;
 }
 
 
 
+.contact-box a {
 
+    position: relative;
+    display: block;
+    width: 85px;
+    height: 85px;
+    line-height: 80px;
+    text-align: center;
+    background: #11173b;
+    border-radius: 50%;
+    color: var(--rich-black);
+    transition: .5s;
+}
+
+  
+.con1 a:hover {
+    color: #007bff;
+    box-shadow: 0 0 15px #007bff;
+    text-shadow: 0 0 5px #007bff;
+    border-radius: 50%;
+}
+
+.con2 a:hover {
+
+    color: white;
+    box-shadow: 0 0 15px white;
+    text-shadow: 0 0 5px white;
+    border-radius: 50%;
+}
+
+.con3 a:hover {
+
+    color: #E1306C ;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 5px #E1306C;
+    border-radius: 50%;
+}
 
