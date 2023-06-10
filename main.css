@@ -68,10 +68,11 @@ body, html {
 
 .parallax-home {
 
-    background-image: url("images/maroon_sunset.jpg");
-    background-attachment: fixed;
+    background-image: url(images/maroon_sunset.jpg);
+    height: 100%;
     background-size: cover;
     display: block;
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -103,6 +104,25 @@ body, html {
     font-family: 'Lato';
 }
 
+@media (max-width: 420px) {
+
+    #header h2 {
+        font-size: 6vmax;
+    }
+
+    #header h3 {
+        font-size: 3vmax;
+    }
+
+    #header h4 {
+        font-size: 2.5vmax;
+    }
+
+    #header {
+
+        height: 100vh
+    }
+}
 
 /*Aboout Me Section*/
 
@@ -325,7 +345,7 @@ body, html {
 
         height: fit-content;
     }
-    
+
     .project-card img{
 
         width: 100%;
