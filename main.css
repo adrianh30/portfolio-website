@@ -69,6 +69,7 @@ body, html {
 .parallax-home {
 
     background-image: url(images/maroon_sunset_back.jpg);
+    height: 100%;
     background-attachment: fixed;
     background-size: cover;
     display: block;
@@ -384,7 +385,7 @@ body, html {
 
     width: 100%;
     height: 110%;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 
 }
 
