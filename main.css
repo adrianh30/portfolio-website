@@ -137,6 +137,13 @@ body, html {
     }
 }
 
+@media only screen and (max-device-width: 1366px) {
+    .parallax-home {
+        background-attachment: scroll;
+    }
+  }
+
+
 /*Aboout Me Section*/
 
 
